@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OTP Verification</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-content">
+      <h1>"Quick Loans, Simplified: Empowering Your Dreams Today!"</h1>
+      <p>"Apply in minutes and get the financial support you need, hassle-free."</p>
+    </div>
+  </div>
+  <div class="container">
+    <h2 class="title">OTP Verification</h2>
+    <form id="otp-form">
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter your phone number" maxlength="10" required>
+        <div class="error" id="phone-error"></div>
+        <button type="button" id="send-otp" class="button">Send OTP</button>
+      </div>
+      <div class="form-group">
+        <label for="otp">Enter OTP</label>
+        <input type="text" id="otp" name="otp" placeholder="Enter OTP" maxlength="6" required>
+        <div class="error" id="otp-error"></div>
+      </div>
+      <button type="submit" class="button">Verify OTP</button>
+      <div class="error" id="form-error"></div>
+    </form>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

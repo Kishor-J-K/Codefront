@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan Application Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2 class="title">Loan Application Form</h2>
+    <form id="loan-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <div class="error" id="name-error"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter your phone number" maxlength="10" required>
+        <div class="error" id="phone-error"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="aadhar">Aadhar Card Number</label>
+        <input type="text" id="aadhar" name="aadhar" maxlength="12" placeholder="Enter your Aadhar number" required>
+        <div class="error" id="aadhar-error"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="loan-amount">Loan Amount</label>
+        <input type="number" id="loan-amount" name="loan-amount" placeholder="Enter loan amount" required>
+        <div class="error" id="loan-amount-error"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="yearly-income">Yearly Income</label>
+        <input type="number" id="yearly-income" name="yearly-income" placeholder="Enter your yearly income" required>
+        <div class="error" id="yearly-income-error"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="occupation">Occupation</label>
+        <input type="text" id="occupation" name="occupation" placeholder="Enter your occupation" required>
+        <div class="error" id="occupation-error"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="loan-reason">Loan Reason</label>
+        <textarea id="loan-reason" name="loan-reason" placeholder="Enter reason for loan" required></textarea>
+        <div class="error" id="loan-reason-error"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="business-location">Business Location</label>
+        <input type="text" id="business-location" name="business-location" placeholder="Enter business location" required>
+        <div class="error" id="business-location-error"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="bank-account">Bank Account Number</label>
+        <input type="text" id="bank-account" name="bank-account" placeholder="Enter bank account number" required>
+        <div class="error" id="bank-account-error"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="guaranter-name">Guarantor Name</label>
+        <input type="text" id="guaranter-name" name="guaranter-name" placeholder="Enter guaranter's name" required>
+        <div class="error" id="guaranter-name-error"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="guaranter-phone">Guarantor Phone Number</label>
+        <input type="text" id="guaranter-phone" name="guaranter-phone" placeholder="Enter guaranter's phone number" required>
+        <div class="error" id="guaranter-phone-error"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="guaranter-aadhar">Guarantor Aadhar Number</label>
+        <input type="text" id="guaranter-aadhar" name="guaranter-aadhar" placeholder="Enter guaranter's Aadhar number" required>
+        <div class="error" id="guaranter-aadhar-error"></div>
+      </div>
+      
+      <div class="form-group">
+        <label for="guaranter-pan">Guarantor PAN Card Number</label>
+        <input type="text" id="guaranter-pan" name="guaranter-pan" placeholder="Enter guarantor's PAN card number" maxlength="10" required>
+        <div class="error" id="guaranter-pan-error"></div>
+      </div>
+      
+
+      <div class="form-group">
+        <label for="shop-photos">Add photos of shop</label>
+        <input type="file" id="shop-photos" name="shop-photos" accept="image/*" multiple required>
+        <div class="error" id="shop-photos-error"></div>
+      </div>
+
+      <!-- New field for expenditure receipts -->
+      <div class="form-group">
+        <label for="utility-receipts">Add Expenditure Receipts of Utilities</label>
+        <input type="file" id="utility-receipts" name="utility-receipts" accept="image/*" multiple required>
+        <div class="error" id="utility-receipts-error"></div>
+      </div>
+
+      <button type="submit" class="button">Submit Application</button>
+      <div class="error" id="form-error"></div>
+    </form>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

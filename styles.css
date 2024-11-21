@@ -1,0 +1,166 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background: url('clay-banks-XvS-uKUoUao-unsplash.jpg') no-repeat center center fixed; /* Use the uploaded image */
+  background-size: cover; /* Ensure it covers the entire viewport */
+  background-blend-mode: overlay; /* Subtle overlay effect for text readability */
+  background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for better contrast */
+  padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+  background: url('clay-banks-XvS-uKUoUao-unsplash.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Muted gradient */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+
+.title {
+  text-align: center;
+  color: #007bff;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+input,
+textarea,
+button {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+/* Button Styles */
+.button {
+  background: #007bff;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #0056b3;
+}
+
+.button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* File Input Styling */
+input[type="file"] {
+  padding: 5px;
+  border: none;
+}
+
+input[type="file"]::file-selector-button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  input,
+  textarea,
+  button {
+    font-size: 0.9rem;
+  }
+}
